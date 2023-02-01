@@ -1,0 +1,55 @@
+chtml> chead>
+
+‹title> Basic web stuff/title> </head> <body> <h5>Version 0.0.1</h5>
+
+<h1 align=center>TA04-Web-Basics-by-Fred.html </h1>
+
+<a href="http://www.google.ca"›Link to Google‹/a›‹br>
+
+Plain Text <b> Bold </b> and <i> Italic </i> can you put them together<bry chry
+
+This is an image <brs
+
+‹img width=208 src="http://hairlesscatblog.com/wp-content/uploads/2014/02/types-of-hairless-cats.ipg"_<br›<br»
+
+Youtube Embedded video <br> <iframe width="300" height="20g" src-"https://www.youtube.com/embed/kUTGTdc-qbg" frameborder="@" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> chry
+
+‹div›This is a </div> ‹div›dive/divs
+
+<span›This is </spans «span> a span</span>
+
+<h3> Write about Ellis' 10 main areas of coding‹/h3>
+
+<input type=button value="®. Pseudo Code" onclick="!
+
+document.getElementById('myDiv01').innerHTML
+
+= 'Hello don't World'
+
+}">
+
+<input type=button value="1. Input/Output" onclick="{
+
+document. getElementById('myDiv@1').innerHTML = 'Input adffgdsfsgsdfdfg‹bry' +'sdfg<brysdfg<br›output is.
+
+]"y
+
+<input type=button value="4. Decisions" onclick="!
+
+document. getElementById('myDiv01').innerHTML
+
+Decisions use the if statement to make true false variable decisions<bry
+
+<pre>
+
+if (hour < 18) {
+
+greeting = \'Good day\';
+
+</pre>
+
+You do. 2:variables, 3:10ops, 5:functions, bievents, 7 arrays, B:objects, 9:classes bes
+
+‹div id="myDiv@1"y...</div>
+<body> 
+</html>
