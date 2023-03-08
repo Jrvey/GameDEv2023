@@ -27,4 +27,9 @@ For Global variables Mr. Ellis prefers to use document.myVarName
                                                   
 }"><br>
 
-<input type=button value
+<input type=button value="Using no variable" onclick="{
+   document.getElementById('myDiv01').innerHTML =
+       document.getElementById('Text01').value
+}"><br>
+
+<div id="myDiv01">...</div>
