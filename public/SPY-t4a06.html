@@ -1,0 +1,635 @@
+<h1 align=center>t2a06-spy-gabby.html</h1>
+<textarea id="myArea01" rows=4 cols=70>The Quick Brown Fox Jumps Over The Lazy Dog numbers dont work</textarea><br> 
+
+<input type=button value="encrypt (Ellis)"  id="ButtonE" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'e') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea02').value = myString.join('')
+}">
+<button id="Button01" onclick="encrypt()">Base 64 Encypt</button>
+<input type=button value="encrypt (Numbers)" id="Button02" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'a') {myTemp  = '1235'} 
+      if (myString[myLoop] == 'b') {myTemp  = '2874'} 
+      if (myString[myLoop] == 'c') {myTemp  = '1142'} 
+      if (myString[myLoop] == 'd') {myTemp  = '2124'}
+      if (myString[myLoop] == 'e') {myTemp  = '1573'} 
+      if (myString[myLoop] == 'f') {myTemp  = '2934'} 
+      if (myString[myLoop] == 'g') {myTemp  = '1354'} 
+      if (myString[myLoop] == 'h') {myTemp  = '2663'}
+      if (myString[myLoop] == 'i') {myTemp  = '1452'} 
+      if (myString[myLoop] == 'j') {myTemp  = '2566'} 
+      if (myString[myLoop] == 'k') {myTemp  = '1883'} 
+      if (myString[myLoop] == 'l') {myTemp  = '2273'}
+      if (myString[myLoop] == 'm') {myTemp  = '1874'} 
+      if (myString[myLoop] == 'n') {myTemp  = '2906'}
+      if (myString[myLoop] == 'o') {myTemp  = '1100'} 
+      if (myString[myLoop] == 'p') {myTemp  = '2002'}
+      if (myString[myLoop] == 'q') {myTemp  = '1754'} 
+      if (myString[myLoop] == 'r') {myTemp  = '2617'} 
+      if (myString[myLoop] == 's') {myTemp  = '1854'} 
+      if (myString[myLoop] == 't') {myTemp  = '2776'}
+      if (myString[myLoop] == 'u') {myTemp  = '1846'} 
+      if (myString[myLoop] == 'v') {myTemp  = '2213'} 
+      if (myString[myLoop] == 'w') {myTemp  = '1332'} 
+      if (myString[myLoop] == 'x') {myTemp  = '2168'}
+      if (myString[myLoop] == 'y') {myTemp  = '1464'}
+      if (myString[myLoop] == 'z') {myTemp  = '2121'} 
+      if (myString[myLoop] == '!') {myTemp  = '1111'}
+      if (myString[myLoop] == '?') {myTemp  = '2876'} 
+      if (myString[myLoop] == '.') {myTemp  = '1008'} 
+      if (myString[myLoop] == ',') {myTemp  = '2531'} 
+      if (myString[myLoop] == ':') {myTemp  = '1997'}
+      
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea02').value = myString.join('')
+}">
+<input type=button value="encrypt (Letters)" id="Button03" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'a') {myTemp  = 'q'} 
+      if (myString[myLoop] == 'b') {myTemp  = 'a'} 
+      if (myString[myLoop] == 'c') {myTemp  = 'z'} 
+      if (myString[myLoop] == 'd') {myTemp  = 'w'}
+      if (myString[myLoop] == 'e') {myTemp  = 's'} 
+      if (myString[myLoop] == 'f') {myTemp  = 'x'} 
+      if (myString[myLoop] == 'g') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'h') {myTemp  = 'd'}
+      if (myString[myLoop] == 'i') {myTemp  = 'c'} 
+      if (myString[myLoop] == 'j') {myTemp  = 'r'} 
+      if (myString[myLoop] == 'k') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'l') {myTemp  = 'v'}
+      if (myString[myLoop] == 'm') {myTemp  = 't'} 
+      if (myString[myLoop] == 'n') {myTemp  = 'g'}
+      if (myString[myLoop] == 'o') {myTemp  = 'b'} 
+      if (myString[myLoop] == 'p') {myTemp  = 'y'}
+      if (myString[myLoop] == 'q') {myTemp  = 'h'} 
+      if (myString[myLoop] == 'r') {myTemp  = 'n'} 
+      if (myString[myLoop] == 's') {myTemp  = 'u'} 
+      if (myString[myLoop] == 't') {myTemp  = 'j'}
+      if (myString[myLoop] == 'u') {myTemp  = 'm'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'w') {myTemp  = 'k'} 
+      if (myString[myLoop] == 'x') {myTemp  = 'o'}
+      if (myString[myLoop] == 'y') {myTemp  = 'l'}
+      if (myString[myLoop] == 'z') {myTemp  = 'p'} 
+      if (myString[myLoop] == '!') {myTemp  = '?'}
+      if (myString[myLoop] == '?') {myTemp  = '!'} 
+      if (myString[myLoop] == '.') {myTemp  = ','} 
+      if (myString[myLoop] == ',') {myTemp  = ':'} 
+      if (myString[myLoop] == ':') {myTemp  = '.'}
+      
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea02').value = myString.join('')
+}"><br><br>
+
+
+<textarea id="myArea02" rows=4 cols=70></textarea><br> 
+<input type=button value="decrypt (Ellis)"  id="ButtonE2" onclick="{
+   let myTemp = ''
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      if (myString[myLoop] == 'f') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'h'} 
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea03').value = myString.join('')
+}">
+<button id="Button04" onclick="decrypt()">Base 64 Decrypt</button>
+
+<input type=button value="decrypt (Numbers)" id="Button05" onclick="{
+  let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      
+      if (myString[myLoop] == '1235') {myTemp  = 'a'} 
+      if (myString[myLoop] == '2874') {myTemp  = 'b'} 
+      if (myString[myLoop] == '1142') {myTemp  = 'c'} 
+      if (myString[myLoop] == '2124') {myTemp  = 'd'}
+      if (myString[myLoop] == '1573') {myTemp  = 'e'} 
+      if (myString[myLoop] == '2934') {myTemp  = 'f'} 
+      if (myString[myLoop] == '1354') {myTemp  = 'g'} 
+      if (myString[myLoop] == '2663') {myTemp  = 'h'}
+      if (myString[myLoop] == '1452') {myTemp  = 'i'} 
+      if (myString[myLoop] == '2566') {myTemp  = 'j'} 
+      if (myString[myLoop] == '1883') {myTemp  = 'k'} 
+      if (myString[myLoop] == '2273') {myTemp  = 'l'}
+      if (myString[myLoop] == '1874') {myTemp  = 'm'} 
+      if (myString[myLoop] == '1906') {myTemp  = 'n'}
+      if (myString[myLoop] == '2100') {myTemp  = 'o'} 
+      if (myString[myLoop] == '1002') {myTemp  = 'p'}
+      if (myString[myLoop] == '2754') {myTemp  = 'q'} 
+      if (myString[myLoop] == '1617') {myTemp  = 'r'} 
+      if (myString[myLoop] == '2254') {myTemp  = 's'} 
+      if (myString[myLoop] == '1776') {myTemp  = 't'}
+      if (myString[myLoop] == '2846') {myTemp  = 'u'} 
+      if (myString[myLoop] == '1213') {myTemp  = 'v'} 
+      if (myString[myLoop] == '2332') {myTemp  = 'w'} 
+      if (myString[myLoop] == '1168') {myTemp  = 'x'}
+      if (myString[myLoop] == '2464') {myTemp  = 'y'}
+      if (myString[myLoop] == '1121') {myTemp  = 'z'} 
+      if (myString[myLoop] == '2111') {myTemp  = '!'}
+      if (myString[myLoop] == '1876') {myTemp  = '?'} 
+      if (myString[myLoop] == '2008') {myTemp  = '.'} 
+      if (myString[myLoop] == '1531') {myTemp  = ','} 
+      if (myString[myLoop] == '2997') {myTemp  = ':'}
+  
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea03').value = myString.join('')
+}">
+<input type=button value="decrypt (Letters)" id="Button06" onclick="{
+  let myTemp = ''
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
+   
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+      
+      if (myString[myLoop] == 'q') {myTemp  = 'a'} 
+      if (myString[myLoop] == 'a') {myTemp  = 'b'} 
+      if (myString[myLoop] == 'z') {myTemp  = 'c'} 
+      if (myString[myLoop] == 'w') {myTemp  = 'd'}
+      if (myString[myLoop] == 's') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'x') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'e') {myTemp  = 'g'} 
+      if (myString[myLoop] == 'd') {myTemp  = 'h'}
+      if (myString[myLoop] == 'c') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'r') {myTemp  = 'j'} 
+      if (myString[myLoop] == 'f') {myTemp  = 'k'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'l'}
+      if (myString[myLoop] == 't') {myTemp  = 'm'} 
+      if (myString[myLoop] == 'g') {myTemp  = 'n'}
+      if (myString[myLoop] == 'b') {myTemp  = 'o'} 
+      if (myString[myLoop] == 'y') {myTemp  = 'p'}
+      if (myString[myLoop] == 'h') {myTemp  = 'q'} 
+      if (myString[myLoop] == 'n') {myTemp  = 'r'} 
+      if (myString[myLoop] == 'u') {myTemp  = 's'} 
+      if (myString[myLoop] == 'j') {myTemp  = 't'}
+      if (myString[myLoop] == 'm') {myTemp  = 'u'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'v'} 
+      if (myString[myLoop] == 'k') {myTemp  = 'w'} 
+      if (myString[myLoop] == 'o') {myTemp  = 'x'}
+      if (myString[myLoop] == 'l') {myTemp  = 'y'}
+      if (myString[myLoop] == 'p') {myTemp  = 'z'} 
+      if (myString[myLoop] == '?') {myTemp  = '!'}
+      if (myString[myLoop] == '!') {myTemp  = '?'} 
+      if (myString[myLoop] == ',') {myTemp  = '.'} 
+      if (myString[myLoop] == ':') {myTemp  = ','} 
+      if (myString[myLoop] == '.') {myTemp  = ':'}
+  
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea03').value = myString.join('')
+}"><br><br>
+
+
+<textarea id="myArea03" rows=4 cols=70></textarea><br>
+<span>
+  
+</span>
+<script>
+  
+    var base64 = "SGVsbG8gV29ybGQh";
+
+    var text = atob(base64);
+   
+    document.write();
+
+</script>
+
+
+
+<script>
+    function encrypt() {
+        var text = document.getElementById("myArea01").value;
+        var base64 = btoa(text);
+        document.getElementById("myArea02").value = base64;
+    }
+    function decrypt() {
+    
+        var base64 = document.getElementById("myArea02").value;
+
+        var text = atob(base64);
+ 
+        document.getElementById("myArea03").value = text;
+    }
+</script>
+<style>
+#myArea01{
+  background: black;
+  border-color: white;
+  color: transparent;
+          animation: colorchange02 5s infinite;
+         
+        }
+        @keyframes colorchange02 {
+          0%, 25% { color: green;}
+          25%, 30% { color: lime;}
+          30%, 55% { color: green;}
+          55%, 100% { color: lime;}
+          
+        
+      
+      
+    }
+    }
+  
+}
+
+
+</style>
+<style>
+#myArea02{
+  background: black;
+  border-color: white;
+  color: transparent;
+          animation: colorchange04 5s infinite;
+         
+        }
+        @keyframes colorchange04 {
+          0%, 25% { color: purple;}
+          25%, 30% { color: magenta;}
+          30%, 55% { color: purple;}
+          55%, 100% { color: magenta;}
+          
+        
+      
+      
+    }
+    }
+  
+}
+
+
+</style>
+<style>
+#myArea03{
+  background: black;
+  border-color: white;
+  color: transparent;
+          animation: colorchange03 5s infinite;
+         
+        }
+        @keyframes colorchange03 {
+          0%, 25% { color: maroon;}
+          25%, 30% { color: red;}
+          30%, 55% { color: maroon;}
+          55%, 100% { color: red;}
+          
+        
+      
+      
+    }
+    }
+  
+}
+
+
+</style>
+<style>
+    body{
+    
+    background: linear-gradient(grey, black);
+        text-align: center;
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+        font-family: 'Share Tech Mono', monospace;
+        color: white;
+    }
+    a{
+          
+          color: transparent;
+          animation: colorchange 1s infinite;
+         
+        }
+        @keyframes colorchange {
+          0%, 25% { background: url("https://media1.tenor.com/images/d982c7d6cc222f4f70c97fc0ea5f2f28/tenor.gif");-webkit-background-clip: text;}
+          25%, 30% { background: url("https://media1.tenor.com/images/d982c7d6cc222f4f70c97fc0ea5f2f28/tenor.gif"); -webkit-background-clip: text;}
+          30%, 55% { background: url("https://media1.tenor.com/images/d982c7d6cc222f4f70c97fc0ea5f2f28/tenor.gif");-webkit-background-clip: text;}
+          55%, 100% { background: url("https://media1.tenor.com/images/d982c7d6cc222f4f70c97fc0ea5f2f28/tenor.gif"); -webkit-background-clip: text;}
+        
+      
+      
+    }
+    }
+        </style>
+        <style>
+        #Button01{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #Button01:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+         <style>
+        #Button02{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #Button02:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+        <style>
+           a:hover {
+      color: transparent;
+      animation: backgroundanim 1s infinite;
+
+    }
+    @keyframes backgroundanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://i.pinimg.com/originals/88/15/c1/8815c1530ba8b997d50d365e5875d1d7.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    }
+
+        </style>
+         <style>
+        #Button03{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #Button03:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+         <style>
+        #Button04{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #Button04:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+         <style>
+        #Button05{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #Button05:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+         <style>
+        #Button06{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #Button06:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+                 <style>
+        #ButtonE{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #ButtonE:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+                 <style>
+        #ButtonE2{
+          background: black;
+          animation: Buttonanim 1s infinite;
+         
+          }
+    @keyframes Buttonanim {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    #ButtonE2:hover{ 
+    animation: Buttonanimclick 1s linear forwards;
+   }
+   @keyframes Buttonanimclick {
+      
+       0%, 50% { background: transparent;-webkit-background-clip: text;}
+       0%, 50% { color: black ;}
+       100% { color: white ;}
+       
+       0%, 50% { background: white;}
+      75%, 100% { background: url("https://media.giphy.com/media/smzfl3E7a4iHK/giphy.gif");}
+    
+    
+    }
+    }
+    
+        
+        
+        </style>
+ <style>
+#rainbow{
+   color: transparent;
+      animation: backgroundanim02 1s infinite;
+
+    }
+    @keyframes backgroundanim02 {
+       0% { background: transparent;-webkit-background-clip: text;}
+      0%, 100% { background: url("https://67.media.tumblr.com/e8037f0e4ea3a0a7160e743b824bc352/tumblr_nglg6pFHLy1s6fchho1_400.gif") ;-webkit-background-clip: text;}
+        
+       
+    }
+    }
+}
+</style>
+<style>
+#box{
+background-color: black;
+border-radius: 0px; 
+padding: 10px; 
+margin: 1px;
+
+}
+</style>
+                                                    <style>
+#box02{
+background: url("https://thumbs.gfycat.com/BreakableHappyAndalusianhorse-size_restricted.gif");
+border-radius: 0px; 
+padding: 10px; 
+margin: 1px;
+
+}
+</style>
+                                                                                      <style>
+#box03{
+background: url("https://preview.redd.it/l8wvajj296c11.gif");
+border-radius: 0px; 
+padding: 10px; 
+margin: 1px;
+
+}
+</style>
