@@ -1,3 +1,7 @@
+Version 0.0.3
+
+<h2 align=center>t4a07-move-background-by-jack</h2>
+
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="https://wallpaperset.com/w/full/2/8/c/6846.jpg">
 
 <script>
@@ -12,10 +16,25 @@
   document.getElementById('myBody').style.backgroundPosition =myTemp
 }">
 
-<input type=button value="Auto Background Left" onclick="{
+<input id="myButton02" type=button value="background move right" onclick="{
+  myTemp = '100px 0px'
+  myGlobalX = 5
+  myTemp =  myGlobalX + 'px 0px'
+  document.getElementById('myBody').style.backgroundPosition =myTemp
+}">
+    
+   <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
   myClock = setInterval(function(){
      document.getElementById('myButton01').click() 
+  }, 100)
+    
+}">
+   
+    <input type=button value="Auto Background Right" onclick="{
+  clearInterval(myClock)
+  myClock = setInterval(function(){
+     document.getElementById('myButton02').click() 
   }, 100)
     
 }">
