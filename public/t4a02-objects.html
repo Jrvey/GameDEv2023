@@ -42,3 +42,16 @@ Nothing: <input type=text id-"mytext01" value="This is currently useless"><br>
 <div id="myDiv01">...</div>
 
 <br>
+<input type=button value="Epic Types of Tape" onClick="{
+let myTape01 = {
+'ductTape'  : 'tape!',
+'paintersTape'  : 'tape!!',
+'clearTape'   : 'tape!!!',
+'videoTape': 'tapes!!!!!'
+}
+document.getElementById('myDiv01').innerHTML = '<br>Epic Types of Tape<br>'
+document.getElementById('myDiv01').innerHTML += 'Duct ' + myTape01.ductTape + '<br>'
+document.getElementById('myDiv01').innerHTML += 'Painters ' + myTape01.paintersTape + '<br>'
+document.getElementById('myDiv01').innerHTML += 'Clear ' + myTape01.clearTape + '<br>'
+document.getElementById('myDiv01').innerHTML += 'Video' + myTape01.videoTape + '<br>'
+}">
