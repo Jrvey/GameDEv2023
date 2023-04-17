@@ -1,4 +1,4 @@
-Version 0.0.2
+Version 0.0.3
 
 <h2 align-center>t4a02-objects-by-Jack</h2>
 
@@ -22,36 +22,17 @@ let myPerson = {
 Nothing: <input type=text id-"mytext01" value="This is currently useless"><br>
 
 
-<input type-button value-"Example Object Set and Show" onClick-"{
-                                                                
-  let myPerson = {
-    "firstName": "Jack",
-    "lastName": "Harvey",
-    "age": 17
-    "eyeColour": "blue"
-    }
-                       
-     document.getElementById('myDiv01').innerHTML - '<br>myPerson Object has properties: <br>'
-     document.getElementById('myDiv01').innerHTML +- 'firstName: ' + myPerson.firstName + '<br>'
-     document.getElementById('myDiv01').innerHTML +- 'lastName: ' + myPerson.lastName + '<br>'
-     document.getElementById('myDiv01').innerHTML +- 'age: ' + myPerson.age + '<br>'
-     document.getElementById('myDiv01').innerHTML +- 'eyeColour: ' + myPerson.eyeColour + <br>
-                       
- }">
-
-<div id="myDiv01">...</div>
-
 <br>
-<input type=button value="Epic Types of Tape" onClick="{
-let myTape01 = {
-'ductTape'  : 'tape!',
-'paintersTape'  : 'tape!!',
-'clearTape'   : 'tape!!!',
-'videoTape': 'tapes!!!!!'
+<input type=button value="Favourite foods to eat" onClick="{
+let myFood01 = {
+'cheeseburgerFood'  : 'tape!',
+'noodlesFood'  : 'tape!!',
+'barbequeFood'   : 'tape!!!',
+'vallFood': 'tapes!!!!!'
 }
-document.getElementById('myDiv01').innerHTML = '<br>Epic Types of Tape<br>'
-document.getElementById('myDiv01').innerHTML += 'Duct ' + myTape01.ductTape + '<br>'
-document.getElementById('myDiv01').innerHTML += 'Painters ' + myTape01.paintersTape + '<br>'
-document.getElementById('myDiv01').innerHTML += 'Clear ' + myTape01.clearTape + '<br>'
-document.getElementById('myDiv01').innerHTML += 'Video' + myTape01.videoTape + '<br>'
+document.getElementById('myDiv01').innerHTML = '<br>My favourite foods<br>'
+document.getElementById('myDiv01').innerHTML += 'Cheese Burgers' + myFood01.cheeseburgerFood + '<br>'
+document.getElementById('myDiv01').innerHTML += 'Soba noodles' + myFood01.noodlesFood + '<br>'
+document.getElementById('myDiv01').innerHTML += 'Anything barbequed' + myFood01.barbequeFood + '<br>'
+document.getElementById('myDiv01').innerHTML += 'I like all food' + myFood01.allFood + '<br>'
 }">
