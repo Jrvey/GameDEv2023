@@ -1,4 +1,6 @@
-Version 0.0.4
+Version 0.0.5
+
+body {background-color: powderblue;}
 
 <h2 align-center>t4a02-objects-by-Jack</h2>
 
@@ -25,10 +27,10 @@ Nothing: <input type=text id-"mytext01" value="Just a fun box to type in idk"><b
 <br>
 <input type=button value="Favourite foods to eat" onClick="{
 let myFood01 = {
-'cheeseburgerFood'  : 'tape!',
-'noodlesFood'  : 'tape!!',
-'barbequeFood'   : 'tape!!!',
-'vallFood': 'tapes!!!!!'
+'cheeseburgerFood'  : 'food!',
+'noodlesFood'  : 'food!!',
+'barbequeFood'   : 'food!!!',
+'allFood': 'food!!!!'
 }
 document.getElementById('myDiv01').innerHTML = '<br>My favourite foods<br>'
 document.getElementById('myDiv01').innerHTML += 'Cheese Burgers' + myFood01.cheeseburgerFood + '<br>'
@@ -37,4 +39,17 @@ document.getElementById('myDiv01').innerHTML += 'Anything barbequed' + myFood01.
 document.getElementById('myDiv01').innerHTML += 'I like all food' + myFood01.allFood + '<br>'
 }">
 
+<input type=button value="Something else to show my understanding" onClick="{
+let myFood01 = {
+'basic'  : 'tape!',
+'intermediate'  : 'tape!!',
+'outstanding'   : 'tape!!!',
+'sogoodthatideserveaninstantpass': 'tapes!!!!!'
+}
+document.getElementById('myDiv01').innerHTML = '<br>My favourite foods<br>'
+document.getElementById('myDiv01').innerHTML += 'Cheese Burgers' + myFood01.cheeseburgerFood + '<br>'
+document.getElementById('myDiv01').innerHTML += 'Soba noodles' + myFood01.noodlesFood + '<br>'
+document.getElementById('myDiv01').innerHTML += 'i do outstanding work both in this class and animation' + 'myFood01.outstanding + '<br>'
+document.getElementById('myDiv01').innerHTML += 'I like all food' + myFood01.sogoodthatideserveaninstantpassUnderstand + '<br>'
+}">
 <div id="myDiv01">
