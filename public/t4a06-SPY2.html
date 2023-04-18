@@ -1,4 +1,4 @@
-Version 0.0.1
+Version 0.0.2
 
 <h1 align=center>t2a06-spy-name.html</h1>
 <textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
@@ -9,8 +9,33 @@ Version 0.0.1
    myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
-      if (myString[myLoop] == 'e') {myTemp  = 'f'} 
-      if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+if (myString[myLoop] == 'a') {myTemp  = 'b'} 
+if (myString[myLoop] == 'b') {myTemp  = 'c'} 
+if (myString[myLoop] == 'c') {myTemp  = 'd'} 
+if (myString[myLoop] == 'd') {myTemp  = 'e'} 
+if (myString[myLoop] == 'e') {myTemp  = 'f'} 
+if (myString[myLoop] == 'f') {myTemp  = 'g'} 
+if (myString[myLoop] == 'g') {myTemp  = 'h'} 
+if (myString[myLoop] == 'h') {myTemp  = 'i'} 
+if (myString[myLoop] == 'i') {myTemp  = 'j'} 
+if (myString[myLoop] == 'j') {myTemp  = 'k'} 
+if (myString[myLoop] == 'k') {myTemp  = 'l'} 
+if (myString[myLoop] == 'l') {myTemp  = 'm'} 
+if (myString[myLoop] == 'm') {myTemp  = 'n'} 
+if (myString[myLoop] == 'n') {myTemp  = 'o'} 
+if (myString[myLoop] == 'o') {myTemp  = 'p'} 
+if (myString[myLoop] == 'p') {myTemp  = 'q'} 
+if (myString[myLoop] == 'q') {myTemp  = 'r'} 
+if (myString[myLoop] == 'r') {myTemp  = 's'} 
+if (myString[myLoop] == 's') {myTemp  = 't'} 
+if (myString[myLoop] == 't') {myTemp  = 'u'} 
+if (myString[myLoop] == 'u') {myTemp  = 'v'} 
+if (myString[myLoop] == 'v') {myTemp  = 'w'} 
+if (myString[myLoop] == 'w') {myTemp  = 'x'} 
+if (myString[myLoop] == 'x') {myTemp  = 'y'}  
+if (myString[myLoop] == 'y') {myTemp  = 'z'}
+if (myString[myLoop] == 'z') {myTemp  = 'a'}
+                                             
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
@@ -21,8 +46,41 @@ Version 0.0.1
 <textarea id="myArea02" rows=4 cols=70></textarea><br> 
 
 <input type=button value="decrypt" onclick="{
-   alert('Sorry, you have to do this!')
-}"><br><br>
+ let myTemp = ''
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   for (let myLoop=0;   myLoop < myString.length; myLoop++){
+      myTemp = myString[myLoop]
+if (myString[myLoop] == 'z') {myTemp  = 'a'} 
+if (myString[myLoop] == 'y') {myTemp  = 'b'} 
+if (myString[myLoop] == 'x') {myTemp  = 'c'} 
+if (myString[myLoop] == 'w') {myTemp  = 'd'} 
+if (myString[myLoop] == 'v') {myTemp  = 'e'} 
+if (myString[myLoop] == 'u') {myTemp  = 'f'} 
+if (myString[myLoop] == 't') {myTemp  = 'g'} 
+if (myString[myLoop] == 's') {myTemp  = 'h'} 
+if (myString[myLoop] == 'r') {myTemp  = 'i'} 
+if (myString[myLoop] == 'q') {myTemp  = 'j'} 
+if (myString[myLoop] == 'p') {myTemp  = 'k'} 
+if (myString[myLoop] == 'o') {myTemp  = 'l'} 
+if (myString[myLoop] == 'n') {myTemp  = 'm'} 
+if (myString[myLoop] == 'm') {myTemp  = 'n'} 
+if (myString[myLoop] == 'l') {myTemp  = 'o'} 
+if (myString[myLoop] == 'k') {myTemp  = 'p'} 
+if (myString[myLoop] == 'j') {myTemp  = 'q'} 
+if (myString[myLoop] == 'i') {myTemp  = 'r'} 
+if (myString[myLoop] == 'h') {myTemp  = 's'} 
+if (myString[myLoop] == 'g') {myTemp  = 't'} 
+if (myString[myLoop] == 'f') {myTemp  = 'u'} 
+if (myString[myLoop] == 'e') {myTemp  = 'v'} 
+if (myString[myLoop] == 'd') {myTemp  = 'y'} 
+if (myString[myLoop] == 'c') {myTemp  = 'x'}  
+if (myString[myLoop] == 'b') {myTemp  = 'y'}
+if (myString[myLoop] == 'a') {myTemp  = 'z'}
+                                             
+      myString[myLoop] = myTemp
+   }
+   document.getElementById('myArea02').value = myString.join('')
+}"   
 
 
 <textarea id="myArea03" rows=4 cols=70></textarea><br> 
