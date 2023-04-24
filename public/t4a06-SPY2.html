@@ -9,7 +9,7 @@
 <br>
 <br>
 <br>
-<h4 align=center>Version 0.0.7</h4>
+<h4 align=center>Version 0.0.8</h4>
 
     <style>
 body{
@@ -65,7 +65,7 @@ if (myString[myLoop] == 'y') {myTemp  = 'z'}
 
 <input type=button value="decrypt" onclick="{
  let myTemp = ''
-   myString = document.getElementById('myArea01').value.toLowerCase().split('')
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
 if (myString[myLoop] == 'b') {myTemp  = 'a'} 
@@ -98,11 +98,6 @@ if (myString[myLoop] == 'a') {myTemp  = 'z'}
       myString[myLoop] = myTemp
    }
    document.getElementById('myArea02').value = myString.join('')
-}"   
+}">   
 
-
-<textarea id="myArea03" rows=4 cols=70></textarea><br> 
-
-
-
-
+<textarea id="myArea03" rows="4" cols="70">this better work</textarea><br>
