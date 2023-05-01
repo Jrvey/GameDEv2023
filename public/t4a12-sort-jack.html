@@ -1,0 +1,38 @@
+<h1 align=center>t2a12 Sort by Jack</h1>
+<h1 align=center>Version0.0.4<h/1>
+
+<input type=button value="WORK (LOW TO HIGH) " onclick="myWork()">
+<input type=button value="WORK (HIGH TO LOW) " onclick="myWork2()">   
+   
+<div id="myDiv01"></div> <br> <br>
+<div id="myDiv02"></div>
+   
+   <script>
+   
+
+    //sort the numbers in myDiv01 and display them in myDiv02
+    function myWork() {
+        var myArray = [];
+        for (var i = 0; i < 10; i++) {
+            myArray[i] = Math.floor(Math.random() * 100);
+        }
+        document.getElementById("myDiv01").innerHTML = myArray;
+        myArray.sort(function(a, b) {
+            return a - b
+        });
+        document.getElementById("myDiv02").innerHTML = myArray;
+    }
+
+    //do the same thing but in reverse order
+    function myWork2() {
+        var myArray = [];
+        for (var i = 0; i < 10; i++) {
+            myArray[i] = Math.floor(Math.random() * 100);
+        }
+        document.getElementById("myDiv01").innerHTML = myArray;
+        myArray.sort(function(a, b) {
+            return b - a
+        });
+        document.getElementById("myDiv02").innerHTML = myArray;
+    }
+</script>
